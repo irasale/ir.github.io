@@ -1,0 +1,16 @@
+/* App.scss */
+:root {
+  --header-bg-color: #f8f8f8; /* Light gray */
+  --hero-bg-color: #f0f0f0; /* Lighter background */
+  --portfolio-bg-color: #dedede; /* Gray */
+  --about-bg-color: #333; /* Dark gray */
+  --contact-bg-color: #000; /* Black */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--hero-bg-color);
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}

@@ -1,0 +1,84 @@
+/* Header.scss */
+
+.apple-header {
+  background-color: #f8f8f8; /* Light gray background */
+  border-bottom: 1px solid #d6d6d6; /* Border line */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: padding 0.3s, background-color 0.3s;
+  padding: 15px 0; /* Adjust padding as needed */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  &.small {
+    padding: 10px 0; /* Smaller padding when scrolled */
+  }
+
+  &.dark-mode {
+    background-color: #000000; /* Dark mode background color */
+    color: white; /* Text color in dark mode */
+    border-bottom-color: #3f3f3f; /* Dark mode border color */
+    
+  }
+
+  .apple-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .apple-logo {
+      width: 100px; /* Adjust logo size */
+      
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .apple-nav {
+      flex: 1;
+      text-align: center;
+
+      .apple-nav-links {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        
+
+        li {
+          margin: 0 15px;
+          font-size: 14px;
+
+          &:first-child {
+            margin-left: 0;
+          }
+
+          a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s ease;
+
+            &:hover {
+              color: #0070c9; /* Apple's blue link color on hover */
+            }
+
+            /* Dark mode specific styles directly targeting specific links */
+            &.dark-mode {
+              color: white;
+              &:hover {
+                color: #0070c9; /* Apple's blue link color on hover */
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
