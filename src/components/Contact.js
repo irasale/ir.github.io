@@ -50,7 +50,7 @@ const Contact = ({ darkMode }) => {
   return (
     <section id="contact" className={`contact-section ${darkMode ? 'dark-mode' : ''}`}>
       <div className="contact-container">
-        <h2>Contact Us</h2>
+        <h2>Contact Me</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <input
