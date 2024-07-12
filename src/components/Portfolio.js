@@ -10,7 +10,7 @@ const Portfolio = ({ darkMode }) => {
           <h1>Ishan Rasale</h1>
           <p className="description">Enthusiastic and driven high school student with an exemplary work ethic and experience.</p>
           <p><strong>Alliance Academy 10th Grade</strong></p>
-          <p><strong>Phone:</strong> (470) 380-5686</p>
+          
           <p><strong>Email:</strong> rasaleishan@gmail.com</p>
         </div>
 
